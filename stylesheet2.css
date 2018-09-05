@@ -37,6 +37,9 @@ a:hover {
 peperoni pizza{
     float:right;
 }
+showcase{
+    background-image:url("pizza1.jpg");
+}
 pizza{
     float:left;
 }
