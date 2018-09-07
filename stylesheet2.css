@@ -1,10 +1,26 @@
+// 1 - Change the default font family in all browsers.
+// 2 - Correct the default line height in all browsers.
+// 3 - Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.
+// 4 - Setting @viewport causes scrollbars to overlap content in IE11 and Edge, so we force a non-overlapping, non-auto-hiding scrollbar to counteract.
+// 5 - Change the default tap highlight to be completely transparent in iOS.
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: black;
+}
 body{
-    font-family: comic, times,helvetica;
-    font-size: 16px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
     line-height: 1.5;
+    color: #212529;
+    text-align: left;
 }
 
-.container{
+container{
     width:80%;
     margin:auto;
     overflow: hidden;
@@ -14,7 +30,8 @@ header{
     background:rgb(0,0,102);
     min-height: 200px;
     color:white;
-    border-bottom: red 3px;
+    border-bottom: 3px;
+    border-bottom-color: red;
 }
 header h1{
     float:left;
@@ -25,23 +42,81 @@ nav{
     float: right;
     margin-top: 60px;
 }
+navbar {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+navbar > container,
+navbar > container-fluid {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+navbar-brand {
+  display: inline-block;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+}
+
+navbar-brand:hover, .navbar-brand:focus {
+  text-decoration: none;
+}
+
+navbar-nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+navbar-nav nav-link {
+  padding-right: 0;
+  padding-left: 0;
+}
 
 header li{
     display: inline;
     font-size: 30px;
     color:grey;
 }
-a:hover { 
-    color: white;
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
-peperoni pizza{
-    float:right;
+a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+a:hover {
+	color: #0056b3;
+	text-decoration: underline;
 }
 showcase{
     background-image:url("pizza1.jpg");
-}
-pizza{
-    float:left;
 }
 
 footer{
@@ -52,6 +127,7 @@ footer{
 ul#otis{
     list-style-type: none;
 }
-ul:hover{
-    background-color: white;
+gallery{
+  margin:0 auto;
+  display:inline-table;
 }
