@@ -37,7 +37,6 @@ header h1{
     float:left;
     margin-top: 50px;
 }
-
 nav{
     float: right;
     margin-top: 60px;
@@ -115,10 +114,12 @@ a:hover {
 	color: #0056b3;
 	text-decoration: underline;
 }
+navbar .button:hover {
+    background-color: blue;
+} 
 showcase{
     background-image:url("pizza1.jpg");
 }
-
 footer{
     text-align: center;
     background:rgb(0,0,102);
@@ -131,3 +132,4 @@ gallery{
   margin:0 auto;
   display:inline-table;
 }
+
