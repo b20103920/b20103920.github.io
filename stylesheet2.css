@@ -111,13 +111,10 @@ a {
   -webkit-text-decoration-skip: objects;
 }
 a:hover {
-  background-color: grey;
-	color: yellow;
+	color: blue;
 	text-decoration: underline;
 }
-navbar .button:hover {
-    background-color: blue;
-} 
+
 showcase{
     background-image:url("pizza1.jpg");
 }
@@ -133,4 +130,3 @@ gallery{
   margin:0 auto;
   display:inline-table;
 }
-
